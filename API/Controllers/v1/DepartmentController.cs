@@ -1,11 +1,9 @@
 ﻿using API.Models;
 using Microsoft.AspNetCore.Mvc;
 
-namespace API.Controllers;
+namespace API.Controllers.v1;
 
-[ApiController]
-[Route("[controller]")]
-public class DepartmentController : ControllerBase
+public class DepartmentController : BaseApiController
 {
     [HttpGet]
     public IActionResult GetAll()
